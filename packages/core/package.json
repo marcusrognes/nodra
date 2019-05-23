@@ -1,0 +1,8 @@
+{
+	"name": "@nodra/core",
+	"version": "0.0.1",
+	"description": "Core for nodra framework",
+	"main": "index.js",
+	"author": "Marcus Rognes <marcus@rognes.guru>",
+	"license": "MIT"
+}
