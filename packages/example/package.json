@@ -1,11 +1,30 @@
 {
-	"name": "nodra-example",
+	"name": "@nodra/example",
 	"version": "0.0.1",
 	"description": "This is an example project for the nodra framework",
-	"main": ".nodra/build/index.js",
+	"main": ".nodra/build/server/index.js",
 	"scripts": {
+		"start": "node .nodra/dist/server/index.js",
+		"dev": "nodra dev",
+		"build": "nodra build",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"author": "Marcus Rognes <marcus@rognes.guru>",
-	"license": "MIT"
+	"license": "MIT",
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"{src,tests,scripts}/*.{js,json,css,md}": [
+			"prettier --write",
+			"git add"
+		]
+	},
+	"dependencies": {
+		"@nodra/build": "^0.0.1",
+		"@nodra/core": "^0.0.1",
+		"@nodra/cli": "^0.0.1"
+	}
 }

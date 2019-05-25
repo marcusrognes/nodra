@@ -1,6 +1,11 @@
 {
 	"private": true,
+	"watch": {
+		"build": "packages/**/{src,test}/*.js"
+	},
 	"scripts": {
+		"build": "lerna run build",
+		"dev": "npm-watch",
 		"test": "lerna run test",
 		"new-version": "lerna version --conventional-commits"
 	},
@@ -16,9 +21,20 @@
 		]
 	},
 	"devDependencies": {
+		"@babel/cli": "^7.4.4",
+		"@babel/core": "^7.4.5",
+		"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+		"@babel/plugin-transform-runtime": "^7.4.4",
+		"@babel/polyfill": "^7.4.4",
+		"@babel/preset-env": "^7.4.5",
+		"@babel/preset-react": "^7.0.0",
+		"@nodra/cli": "^0.0.1",
+		"@nodra/build": "^0.0.1",
+		"@nodra/core": "^0.0.1",
 		"husky": "^2.3.0",
 		"lerna": "^3.14.1",
 		"lint-staged": "^8.1.7",
+		"npm-watch": "^0.6.0",
 		"prettier": "^1.17.1"
 	}
 }

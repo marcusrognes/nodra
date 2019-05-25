@@ -1,8 +1,4 @@
-import chalk from 'chalk';
-import { log, exit } from '@nodra/core';
-
-const error = chalk.bold.underline.red;
-const highlight = chalk.bold.underline;
+import { log, exit, highlight, error } from '@nodra/core';
 
 export default function NewCommand(program) {
 	program
