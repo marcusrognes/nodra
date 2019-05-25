@@ -6,8 +6,8 @@
 	"author": "Marcus Rognes <marcus@rognes.guru>",
 	"license": "MIT",
 	"scripts": {
-		"build": "webpack",
-		"dev": "webpack --watch"
+		"build": "babel src -d dist",
+		"dev": "babel -w --verbose src -d dist"
 	},
 	"dependencies": {
 		"chalk": "^2.4.2",
@@ -15,9 +15,12 @@
 		"esm": "^3.2.25"
 	},
 	"bin": {
-		"nodra": "bin/nodra.js"
+		"nodra": "dist/index.js"
 	},
 	"devDependencies": {
+		"@babel/cli": "^7.4.4",
+		"@babel/core": "^7.4.5",
+		"@babel/preset-env": "^7.4.5",
 		"webpack": "^4.32.2",
 		"webpack-cli": "^3.3.2"
 	}
