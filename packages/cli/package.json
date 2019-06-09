@@ -10,7 +10,6 @@
 		"dev": "babel -w --verbose src -d dist"
 	},
 	"dependencies": {
-		"@babel/polyfill": "^7.4.4",
 		"@nodra/build": "^0.0.1",
 		"@nodra/core": "^0.0.1",
 		"chalk": "^2.4.2",

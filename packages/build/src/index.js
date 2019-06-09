@@ -1,4 +1,3 @@
-import '@babel/polyfill';
 import { debug, VERBOSITY_LEVELS, highlight } from '@nodra/core';
 import path from 'path';
 import nodeExternals from 'webpack-node-externals';
