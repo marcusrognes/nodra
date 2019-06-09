@@ -1,5 +1,3 @@
-require('@babel/polyfill');
-
 const util = require('util');
 const chalk = require('chalk');
 
